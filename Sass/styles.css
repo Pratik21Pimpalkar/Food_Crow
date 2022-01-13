@@ -1,0 +1,288 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  background-color: #e3e2df;
+  font-size: 16px;
+}
+
+.navbar {
+  position: absolute !important;
+  background-color: transparent;
+  z-index: 1000;
+  width: 100vw;
+}
+
+.addBg {
+  background-color: #57f1b1 !important;
+}
+
+.addtext {
+  color: #220901 !important;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffdde6;
+}
+
+.navbar-brand:hover {
+  color: #9a1750 !important;
+  background-color: #e3e2df;
+}
+
+.emptydiv {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+}
+
+.nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #ffdde6;
+  font-weight: 700;
+  border-radius: 1rem;
+  padding: 1rem 1rem !important;
+}
+
+.nav-link span {
+  padding-left: 0.5rem;
+}
+
+.nav-link a {
+  padding-top: 1rem;
+}
+
+.nav-link:hover {
+  color: #9a1750 !important;
+  background-color: #e3e2df;
+}
+
+.jumbotoron {
+  background: url(../Img/pexels-chan-walrus-958545.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  position: relative;
+}
+
+.jumbotoron .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+  position: absolute;
+}
+
+.jumbotoron .title {
+  z-index: 2;
+  padding: 0rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.jumbotoron .title .Tagline1 {
+  text-align: center;
+  line-height: 1.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  color: burlywood;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  display: inline-block;
+  border-top: 4px double rgba(255, 255, 255, 0.25);
+  border-width: 4px 0;
+  padding: 1rem 0rem;
+}
+
+.jumbotoron .title .Tagline2 {
+  text-align: center;
+  line-height: 1.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  color: burlywood;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  display: inline-block;
+  border-bottom: 4px double rgba(255, 255, 255, 0.25);
+  border-width: 4px 0;
+  padding: 1.5rem 0rem;
+}
+
+.jumbotoron .title .animated {
+  text-align: center;
+  font: 700 4rem/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: 0.5rem 0rem;
+  margin: 0.9rem 0rem;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: head 80s linear infinite;
+          animation: head 80s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.jumbotoron .title .btn {
+  background-color: #57f1b1;
+  font-weight: 700;
+  color: #220901;
+  margin-top: 4rem;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@-webkit-keyframes head {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes head {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.AboutUS {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.AboutUS h2 {
+  font-size: 3rem;
+  padding-top: 5rem;
+}
+
+.AboutUS .str {
+  text-transform: uppercase;
+}
+
+.AboutUS p {
+  padding-right: 5rem;
+  max-width: 35rem;
+  color: gray;
+}
+
+.AboutUS .circleImg {
+  padding-top: 2rem;
+}
+
+.AboutUS .Circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background-color: #5d001e;
+  width: 23rem;
+  height: 23rem;
+  border-radius: 50%;
+  border: #5d001e;
+}
+
+.AboutUS .sCircle {
+  position: relative;
+  -o-object-fit: contain;
+     object-fit: contain;
+  bottom: 8rem;
+  left: 16rem;
+  background-color: #abf302;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: #ff6363;
+}
+
+.Speciality {
+  height: 70vh;
+  width: 100vw;
+}
+
+.Speciality h2 {
+  font-size: 3rem;
+  padding-top: 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,248 @@
+$darkpink: #5d001e;
+$marble: #e3e2df;
+$navpink: #e3afbc;
+$pink: #9a1750;
+$pinkish: #ee4c7c;
+$navpink: #ffdde6;
+$MIDNIGHT_BLUE: #210a72;
+$LIGHT_BLUE: #a5d6e4;
+$PALE_PINK: #fbc4d5;
+$MANDARIN: #e68244;
+$MEDIUM_AQUAMARINE: #57f1b1;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  background-color: $marble;
+  font-size: 16px;
+}
+
+// Navigation Bar
+
+.navbar {
+  position: absolute !important;
+  background-color: transparent;
+  z-index: 1000;
+  width: 100vw;
+}
+.addBg {
+  // background-color: $MANDARIN !important;
+  background-color: $MEDIUM_AQUAMARINE !important;
+}
+.addtext {
+  color: #220901 !important;
+}
+.container {
+  display: flex;
+}
+.navbar-toggler {
+  &:focus,
+  &:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $navpink;
+  &:hover {
+    color: $pink !important;
+    background-color: $marble;
+  }
+}
+.emptydiv {
+  flex: 6;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+
+  text-transform: uppercase;
+  color: $navpink;
+  font-weight: 700;
+  border-radius: 1rem;
+  padding: 1rem 1rem !important;
+  span {
+    padding-left: 0.5rem;
+  }
+  a {
+    padding-top: 1rem;
+  }
+  &:hover {
+    color: $pink !important;
+    background-color: $marble;
+    // background-color: $pink;
+    // color:$marble;
+  }
+}
+
+// Jumbotoron
+
+.jumbotoron {
+  background: url(../Img/pexels-chan-walrus-958545.jpg);
+
+  background-size: cover;
+  background-attachment: fixed;
+  //   width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  position: relative;
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    position: absolute;
+    // display: none;
+  }
+
+  .title {
+    // position: relative;
+    // top: 6rem;
+    z-index: 2;
+    padding: 0rem 1rem;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    .Tagline1 {
+      text-align: center;
+      line-height: 1.5rem;
+      box-sizing: border-box;
+      width: 100%;
+      color: burlywood;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+      display: inline-block;
+      border-top: 4px double rgba(255, 255, 255, 0.25);
+      border-width: 4px 0;
+      padding: 1rem 0rem;
+    }
+    .Tagline2 {
+      text-align: center;
+      line-height: 1.5rem;
+      box-sizing: border-box;
+      width: 100%;
+      color: burlywood;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+      display: inline-block;
+      border-bottom: 4px double rgba(255, 255, 255, 0.25);
+      border-width: 4px 0;
+      padding: 1.5rem 0rem;
+    }
+    .animated {
+      text-align: center;
+      font: 700 4rem/1 "Oswald", sans-serif;
+      letter-spacing: 0;
+      padding: 0.5rem 0rem;
+      margin: 0.9rem 0rem;
+      text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+
+      background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      -webkit-text-fill-color: transparent;
+      animation: head 80s linear infinite;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+    }
+    .btn {
+      background-color: $MEDIUM_AQUAMARINE;
+      font-weight: 700;
+      color: #220901;
+      margin-top: 4rem;
+      width: 150px;
+      display: flex;
+      text-align: center;
+      align-self: center;
+      justify-content: center;
+    }
+    @keyframes head {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+  }
+}
+
+// Aboutus
+
+.AboutUS{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  h2{
+    font-size: 3rem;
+    padding-top: 5rem;
+  }
+  .str{
+    text-transform: uppercase;
+  }
+  p{
+    padding-right: 5rem;
+   max-width: 35rem;
+    color: gray;
+  }
+  .circleImg{
+    padding-top: 2rem;
+  }
+  .Circle{
+    display: flex;
+    align-self: center;
+    background-color: #5d001e;
+    width: 23rem;
+    height: 23rem;
+    border-radius: 50%;
+    border: #5d001e;
+  }
+  .sCircle{
+    position: relative;
+    object-fit: contain;
+    bottom: 8rem;
+    left: 16rem;
+    background-color: #abf302;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: #ff6363;
+  }
+}
+
+// Speciality
+
+.Speciality{
+  height: 70vh;
+  width:100vw;
+  h2{
+    font-size: 3rem;
+    padding-top: 5rem;
+  }
+}
+// Mediaqueries
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 10px;
+  }
+  
+}
