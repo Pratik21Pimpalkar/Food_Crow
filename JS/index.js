@@ -19,3 +19,4 @@ const Hamburger = document.querySelector(".navbar-toggler");
 Hamburger.addEventListener("click", function () {
   navbg.classList.add("addBg");
 });
+

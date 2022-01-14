@@ -15,7 +15,7 @@ html {
   position: absolute !important;
   background-color: transparent;
   z-index: 1000;
-  width: 100vw;
+  width: 100%;
 }
 
 .addBg {
@@ -248,7 +248,7 @@ html {
   width: 23rem;
   height: 23rem;
   border-radius: 50%;
-  border: #5d001e;
+  border: white 0.7rem solid;
 }
 
 .AboutUS .sCircle {
@@ -265,13 +265,35 @@ html {
 }
 
 .Speciality {
-  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100vw;
 }
 
 .Speciality h2 {
   font-size: 3rem;
-  padding-top: 5rem;
+  padding: 5rem 0rem;
+}
+
+.item {
+  width: 22rem;
+  height: 27rem;
+  border: #210a72 solid 1px;
+}
+
+.item img {
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {

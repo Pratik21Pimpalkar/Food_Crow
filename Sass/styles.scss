@@ -27,7 +27,7 @@ html {
   position: absolute !important;
   background-color: transparent;
   z-index: 1000;
-  width: 100vw;
+  width: 100%;
 }
 .addBg {
   // background-color: $MANDARIN !important;
@@ -208,7 +208,7 @@ html {
     width: 23rem;
     height: 23rem;
     border-radius: 50%;
-    border: #5d001e;
+    border: white 0.7rem solid;
   }
   .sCircle{
     position: relative;
@@ -226,13 +226,30 @@ html {
 // Speciality
 
 .Speciality{
-  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width:100vw;
+
   h2{
     font-size: 3rem;
-    padding-top: 5rem;
+    padding: 5rem 0rem;
   }
 }
+.item{
+  width:22rem;
+  height: 27rem;
+  border: #210a72 solid 1px;
+  img{
+    width: 100%;
+  }
+   
+}
+
+
+
+
 // Mediaqueries
 
 @media only screen and (max-width: 768px) {
