@@ -182,106 +182,121 @@ html {
 
 // Aboutus
 
-.AboutUS{
+.AboutUS {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-self: center;
   flex-wrap: wrap;
-  h2{
+  align-items: center;
+
+  h2 {
     font-size: 3rem;
-    padding-top: 5rem;
+    padding-top: 3rem;
   }
-  .str{
+  .str {
     text-transform: uppercase;
   }
-  p{
+  p {
     padding-right: 5rem;
-   max-width: 35rem;
+    max-width: 35rem;
     color: gray;
   }
-  .circleImg{
-    padding-top: 2rem;
+  .circleImg {
+    padding-top: 6rem;
+    padding-right: 3rem;
   }
-  .Circle{
+  .Circle {
     display: flex;
     align-self: center;
-    background-color: #5d001e;
+    background-image: url(../Img/gravy.jpg);
+    background-size: cover;
     width: 23rem;
     height: 23rem;
     border-radius: 50%;
     border: white 0.7rem solid;
   }
-  .sCircle{
+  .sCircle {
     position: relative;
     object-fit: contain;
     bottom: 8rem;
     left: 16rem;
-    background-color: #abf302;
+    background-image: url(../Img/frenchfries.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-    border: #ff6363;
+    border: white 0.4rem solid;
+
   }
 }
 
 // Speciality
+.Speciality {
+  background: url(../Img/banquet-hall-gd2234beb3_1280.jpg);
+  position: relative;
 
-.Speciality{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width:100vw;
-
-  h2{
-    font-size: 3rem;
-    padding: 5rem 0rem;
+  background-size: cover;
+  background-attachment: fixed;
+  .Carousel-Wrapper {
+    display: flex;
   }
-}
-.item{
-  width:22rem;
-  height: 27rem;
-  border: #210a72 solid 1px;
-  img{
+  .overlay {
     width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    position: absolute;
+    // display: none;
   }
-   
 }
-
 .is-constrain {
   max-width: 1180px;
   margin: 0 auto;
 }
-#owl-carousel{
+#owl-carousel {
   display: block;
   overflow: hidden;
 }
+.owl-nav {
+  display: none;
+}
 .p-press__content {
-    padding: 60px 20px 100px;
-
-    h1 {
-      margin-bottom: 60px;
-    }
-
-    .c-card-blog-news {
-      display: block;
-      //max-width: 260px;
-      height: 29rem;
-    }
-
-    .p-press__image-wrapper {
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      justify-content: center;
-      background-color: #f5f5f5;
-
-      img {
-        width: 80%;
-      }
-    }
+  padding: 60px 20px 100px;
+  overflow: hidden;
+  z-index: 2;
+  h1 {
+    font-size: 3rem;
+    color: #f5ff85;
+    padding: 5rem 0rem 0 0;
+  }
+  p{
+    
+    color: $navpink;
+    padding: 0 0 1rem 0;
+  }
+  .c-card-blog-news {
+    display: block;
+    //max-width: 260px;
+    height: 29rem;
   }
 
+  .p-press__image-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      padding: 0.7rem;
+    }
+  }
+}
 
 // Mediaqueries
 
@@ -294,5 +309,4 @@ html {
   html {
     font-size: 10px;
   }
-  
 }

@@ -212,16 +212,20 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-item-align: center;
+      align-self: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .AboutUS h2 {
   font-size: 3rem;
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 
 .AboutUS .str {
@@ -235,7 +239,8 @@ html {
 }
 
 .AboutUS .circleImg {
-  padding-top: 2rem;
+  padding-top: 6rem;
+  padding-right: 3rem;
 }
 
 .AboutUS .Circle {
@@ -244,7 +249,8 @@ html {
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
-  background-color: #5d001e;
+  background-image: url(../Img/gravy.jpg);
+  background-size: cover;
   width: 23rem;
   height: 23rem;
   border-radius: 50%;
@@ -257,43 +263,34 @@ html {
      object-fit: contain;
   bottom: 8rem;
   left: 16rem;
-  background-color: #abf302;
+  background-image: url(../Img/frenchfries.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
-  border: #ff6363;
+  border: white 0.4rem solid;
 }
 
 .Speciality {
+  background: url(../Img/banquet-hall-gd2234beb3_1280.jpg);
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.Speciality .Carousel-Wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100vw;
 }
 
-.Speciality h2 {
-  font-size: 3rem;
-  padding: 5rem 0rem;
-}
-
-.item {
-  width: 22rem;
-  height: 27rem;
-  border: #210a72 solid 1px;
-}
-
-.item img {
+.Speciality .overlay {
   width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+  position: absolute;
 }
 
 .is-constrain {
@@ -306,12 +303,25 @@ html {
   overflow: hidden;
 }
 
+.owl-nav {
+  display: none;
+}
+
 .p-press__content {
   padding: 60px 20px 100px;
+  overflow: hidden;
+  z-index: 2;
 }
 
 .p-press__content h1 {
-  margin-bottom: 60px;
+  font-size: 3rem;
+  color: #f5ff85;
+  padding: 5rem 0rem 0 0;
+}
+
+.p-press__content p {
+  color: #ffdde6;
+  padding: 0 0 1rem 0;
 }
 
 .p-press__content .c-card-blog-news {
@@ -335,7 +345,11 @@ html {
 }
 
 .p-press__content .p-press__image-wrapper img {
-  width: 80%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0.7rem;
 }
 
 @media only screen and (max-width: 768px) {
