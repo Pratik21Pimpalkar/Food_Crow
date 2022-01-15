@@ -31,10 +31,10 @@ html {
 }
 .addBg {
   // background-color: $MANDARIN !important;
-  background-color: $MEDIUM_AQUAMARINE !important;
+  background-color: rgb(145, 37, 37) !important;
 }
 .addtext {
-  color: #220901 !important;
+  color: #ffe6dd !important;
 }
 .container {
   display: flex;
@@ -162,8 +162,8 @@ html {
       background-color: $MEDIUM_AQUAMARINE;
       font-weight: 700;
       color: #220901;
-      margin-top: 4rem;
-      width: 150px;
+      margin-top: 3rem;
+      width: 9rem;
       display: flex;
       text-align: center;
       align-self: center;
@@ -227,17 +227,17 @@ html {
     height: 10rem;
     border-radius: 50%;
     border: white 0.4rem solid;
-
   }
 }
 
 // Speciality
 .Speciality {
-  background: url(../Img/banquet-hall-gd2234beb3_1280.jpg);
+  background: url(../Img/tt.jpg);
   position: relative;
 
   background-size: cover;
   background-attachment: fixed;
+
   .Carousel-Wrapper {
     display: flex;
   }
@@ -270,8 +270,7 @@ html {
     color: #f5ff85;
     padding: 5rem 0rem 0 0;
   }
-  p{
-    
+  p {
     color: $navpink;
     padding: 0 0 1rem 0;
   }
@@ -294,6 +293,199 @@ html {
       height: 100%;
       object-fit: cover;
       padding: 0.7rem;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 780px) {
+    .c-card-blog-news {
+      height: 23rem;
+    }
+  }
+  @media (min-width: 781px) and (max-width: 1100px) {
+    .c-card-blog-news {
+      height: 18rem;
+    }
+  }
+}
+
+// Menu
+
+.menu {
+  height: 100vh;
+  h2 {
+    font-size: 3rem;
+    padding-top: 3rem;padding-left: 2rem;
+  }
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .cards {
+    display: flex;
+
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather Sans", sans-serif;
+    line-height: 1.6em;
+    font-size: 0.8em;
+    .cards_item {
+      display: flex;
+      padding: 1rem;
+
+      .card {
+        background-color: #c9b083;
+        border-radius: 0.25rem;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .card_content {
+        padding: 0em;
+      }
+
+      .card_title {
+        text-transform: uppercase;
+        background-color: #702b27;
+        padding: 10px 20px;
+        color: #d9cc8f;
+        font-size: 2em;
+        line-height: 1.1em;
+        margin: 0px;
+      }
+
+      .card_text {
+        padding: 10px 20px;
+      }
+
+      /* List */
+      .card ul {
+        list-style: none;
+        padding: 0;
+        list-style: none;
+        margin-top: -10px;
+      }
+
+      .card li {
+        padding-left: 1.3em;
+      }
+
+      .card li:before {
+        content: "\f067";
+        font-family: "FontAwesome";
+        display: inline-block;
+        margin-left: -1.3em;
+        color: #702b27;
+        width: 1.3em;
+      }
+
+      /* Text-overflow */
+      .hideshow {
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 28ch;
+        text-overflow: ellipsis;
+        transition: overflow 1s;
+        cursor: pointer;
+      }
+
+      .hideshow:hover {
+        white-space: normal;
+        overflow: visible;
+        height: auto;
+        max-width: 100%;
+      }
+
+      /* Price */
+      .price:after {
+        content: "Starting from ₹170";
+        top: 0px;
+        left: 0px;
+        padding: 10px;
+        background: #702b27;
+        position: absolute;
+        color: #d9cc8f;
+        font-size: 2em;
+        font-weight: 700;
+      }
+
+      .price1:after {
+        content: "Starting from ₹250";
+        top: 0px;
+        left: 0px;
+        padding: 10px;
+        background: #702b27;
+        position: absolute;
+        color: #d9cc8f;
+        font-size: 2em;
+        font-weight: 700;
+      }
+
+      .price2:after {
+        content: "Starting from ₹50";
+        top: 0px;
+        left: 0px;
+        padding: 10px;
+        background: #702b27;
+        position: absolute;
+        color: #d9cc8f;
+        font-size: 2em;
+        font-weight: 700;
+      }
+      .price3:after {
+        content: "Starting from ₹150";
+        top: 0px;
+        left: 0px;
+        padding: 10px;
+        background: #702b27;
+        position: absolute;
+        color: #d9cc8f;
+        font-size: 2em;
+        font-weight: 700;
+      }
+
+      /* Images */
+      .card_image {
+        background-image: url(../Img/frenchfries.jpg) !important;
+        background-size: cover !important;
+        height: 16rem;
+        background: #000;
+      }
+      .card_image1 {
+        background-image: url(../Img/gravy.jpg) !important;
+        background-size: cover !important;
+        height: 16rem;
+        background: #000;
+      }
+      .card_image2{
+        background-image: url(../Img/drinks.jpg) !important;
+        background-size: cover !important;
+        height: 16rem;
+        background: #000;
+      }
+      .card_image3 {
+        background-image: url(../Img/2.jpg) !important;
+        background-size: cover !important;
+        height: 16rem;
+        background: #000;
+      }
+
+      .flip {
+        transform: scaleX(-1);
+      }
+    }
+  }
+  @media (min-width: 40rem) {
+    .cards_item {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 56rem) {
+    .cards_item {
+      width: 33.3333%;
     }
   }
 }
