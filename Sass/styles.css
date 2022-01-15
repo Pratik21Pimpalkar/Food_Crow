@@ -296,6 +296,48 @@ html {
   width: 100%;
 }
 
+.is-constrain {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+#owl-carousel {
+  display: block;
+  overflow: hidden;
+}
+
+.p-press__content {
+  padding: 60px 20px 100px;
+}
+
+.p-press__content h1 {
+  margin-bottom: 60px;
+}
+
+.p-press__content .c-card-blog-news {
+  display: block;
+  height: 29rem;
+}
+
+.p-press__content .p-press__image-wrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.p-press__content .p-press__image-wrapper img {
+  width: 80%;
+}
+
 @media only screen and (max-width: 768px) {
   html {
     font-size: 12px;

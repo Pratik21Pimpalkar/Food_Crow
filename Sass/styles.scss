@@ -247,7 +247,40 @@ html {
    
 }
 
+.is-constrain {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+#owl-carousel{
+  display: block;
+  overflow: hidden;
+}
+.p-press__content {
+    padding: 60px 20px 100px;
 
+    h1 {
+      margin-bottom: 60px;
+    }
+
+    .c-card-blog-news {
+      display: block;
+      //max-width: 260px;
+      height: 29rem;
+    }
+
+    .p-press__image-wrapper {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: center;
+      background-color: #f5f5f5;
+
+      img {
+        width: 80%;
+      }
+    }
+  }
 
 
 // Mediaqueries
