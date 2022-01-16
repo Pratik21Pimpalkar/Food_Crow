@@ -20,4 +20,3 @@ Hamburger.addEventListener("click", function () {
   navbg.classList.add("addBg");
 });
 
-const menuImg= querySelector("")
