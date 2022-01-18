@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400&family=Cabin+Sketch:wght@400;700&family=Fira+Mono&family=Fugaz+One&family=Fuzzy+Bubbles:wght@400;700&family=Grandstander:wght@100&family=Mate+SC&family=Nanum+Pen+Script&family=Zen+Maru+Gothic:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400&family=Bebas+Neue&family=Cabin+Sketch:wght@400;700&family=Fira+Mono&family=Fredoka+One&family=Fugaz+One&family=Fuzzy+Bubbles:wght@400;700&family=Grandstander:wght@100&family=Great+Vibes&family=Mate+SC&family=Nanum+Pen+Script&family=Zen+Maru+Gothic:wght@300;400&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -14,14 +14,14 @@ html {
 }
 
 .navbar {
-  position: absolute !important;
+  position: fixed !important;
   background-color: transparent;
   z-index: 1000;
   width: 100%;
 }
 
 .addBg {
-  background-color: #912525 !important;
+  background-color: #1f1f1f !important;
 }
 
 .addtext {
@@ -41,10 +41,20 @@ html {
 }
 
 .navbar-brand {
-  font-size: 1.5rem;
-  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-family: "Great Vibes", cursive;
   font-weight: 700;
-  color: #ffdde6;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: head 80s linear infinite;
+          animation: head 80s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .navbar-brand:hover {
@@ -160,6 +170,7 @@ html {
   text-align: center;
   font: 700 4rem/1 "Oswald", sans-serif;
   font-family: "Fuzzy Bubbles", cursive;
+  font-family: "Great Vibes", cursive;
   padding: 0.5rem 0rem;
   margin: 0.9rem 0rem;
   text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
@@ -176,20 +187,31 @@ html {
 }
 
 .jumbotoron .title .btn {
-  background-color: #57f1b1;
+  background-image: linear-gradient(135deg, #fdffc2 10%, #fb4646 100%);
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #05008f;
   font-weight: 700;
-  color: #220901;
   margin-top: 3rem;
   width: 9rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
   -ms-flex-item-align: center;
       align-self: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.jumbotoron .title .btn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
 @-webkit-keyframes head {
@@ -371,15 +393,15 @@ html {
 }
 
 .menu {
-  background: linear-gradient(119deg, #bb8d39, #fff, #e3bb73);
   border-top: 0.2rem double white;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }
 
 .menu .menu-headiing {
-  background: #5e3f1e;
-  color: antiquewhite;
+  color: #32230f;
   font-size: 3rem;
-  padding-top: 3rem;
+  padding: 1rem;
   font-family: "Mate SC", serif;
   font-weight: 900;
   text-align: center;
@@ -586,6 +608,122 @@ html {
   .menu .cards_item {
     width: 25%;
   }
+}
+
+.Services {
+  position: relative;
+  background-attachment: fixed;
+  background: url(../Img/bg-service.jpg);
+  background-size: cover;
+}
+
+.Services .serv-headiing {
+  color: #ff8600;
+  font-size: 3rem;
+  padding: 5rem 0 0 0;
+  font-family: "Mate SC", serif;
+  font-weight: 900;
+  text-align: center;
+}
+
+.Services .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+  position: absolute;
+}
+
+.Services .services-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Services .serv-box {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 1;
+  padding-bottom: 4rem;
+}
+
+.Services .service-card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  width: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Services .service-card-wrapper .service-card {
+  border: #ffed71 0.6rem double;
+  width: 20rem;
+  min-width: 12rem;
+  margin: 2rem 0.5rem;
+  padding: 1rem;
+  border-radius: 4rem 0.3rem 4rem 0.3rem;
+  background-color: rgba(255, 0, 71, 0.13);
+}
+
+.Services .servImg {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Services .servImg img {
+  border-radius: 1.6rem 0.3rem 1.6rem 0.3rem;
+  width: 10rem;
+}
+
+.Services .servDes {
+  color: #fff996;
+  text-align: center;
+  font-size: 2.1rem;
+}
+
+@media only screen and (max-width: 580px) {
+  .Services .service-card-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+footer {
+  height: 50vh;
+}
+
+footer .footwrapper .foot-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footwrapper .foot-tab .links-tab {
+  margin: 1rem;
 }
 
 @media only screen and (max-width: 768px) {

@@ -9,8 +9,7 @@ $LIGHT_BLUE: #a5d6e4;
 $PALE_PINK: #fbc4d5;
 $MANDARIN: #e68244;
 $MEDIUM_AQUAMARINE: #57f1b1;
-
-@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400&family=Cabin+Sketch:wght@400;700&family=Fira+Mono&family=Fugaz+One&family=Fuzzy+Bubbles:wght@400;700&family=Grandstander:wght@100&family=Mate+SC&family=Nanum+Pen+Script&family=Zen+Maru+Gothic:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400&family=Bebas+Neue&family=Cabin+Sketch:wght@400;700&family=Fira+Mono&family=Fredoka+One&family=Fugaz+One&family=Fuzzy+Bubbles:wght@400;700&family=Grandstander:wght@100&family=Great+Vibes&family=Mate+SC&family=Nanum+Pen+Script&family=Zen+Maru+Gothic:wght@300;400&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,14 +24,14 @@ html {
 // Navigation Bar
 
 .navbar {
-  position: absolute !important;
+  position: fixed !important;
   background-color: transparent;
   z-index: 1000;
   width: 100%;
 }
 .addBg {
   // background-color: $MANDARIN !important;
-  background-color: rgb(145, 37, 37) !important;
+  background-color: #1f1f1f !important;
 }
 .addtext {
   color: #ffe6dd !important;
@@ -48,10 +47,20 @@ html {
   }
 }
 .navbar-brand {
-  font-size: 1.5rem;
-  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-family: "Great Vibes", cursive;
   font-weight: 700;
-  color: $navpink;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  animation: head 80s linear infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  // color: $navpink;
   &:hover {
     color: $pink !important;
     background-color: $marble;
@@ -146,6 +155,7 @@ html {
       text-align: center;
       font: 700 4rem/1 "Oswald", sans-serif;
       font-family: "Fuzzy Bubbles", cursive;
+      font-family: "Great Vibes", cursive;
       padding: 0.5rem 0rem;
       margin: 0.9rem 0rem;
       text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
@@ -160,15 +170,23 @@ html {
       backface-visibility: hidden;
     }
     .btn {
-      background-color: $MEDIUM_AQUAMARINE;
+      background-image: linear-gradient(135deg, #fdffc2 10%, #fb4646 100%);
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: #05008f;
       font-weight: 700;
-      color: #220901;
       margin-top: 3rem;
       width: 9rem;
       display: flex;
-      text-align: center;
       align-self: center;
       justify-content: center;
+      &:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+      }
     }
     @keyframes head {
       0% {
@@ -315,19 +333,19 @@ html {
 // Menu
 
 .menu {
-  background: linear-gradient(119deg, #bb8d39, #fff, #e3bb73);
+  // background: linear-gradient(119deg, #bb8d39, #fff, #e3bb73);
   border-top: 0.2rem double white;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
   .menu-headiing {
-    background: #5e3f1e;
-    color: antiquewhite;
+    color: #32230f;
     font-size: 3rem;
-    padding-top: 3rem;
+    padding: 1rem;
     font-family: "Mate SC", serif;
     font-weight: 900;
     text-align: center;
   }
   .menu-des {
-    
     font-weight: 800;
     text-align: center;
     margin: 0 1rem;
@@ -507,6 +525,99 @@ html {
   @media (min-width: 56rem) {
     .cards_item {
       width: 25%;
+    }
+  }
+}
+
+// Services
+
+.Services {
+  position: relative;
+  background-attachment: fixed;
+  background: url(../Img/bg-service.jpg);
+  background-size: cover;
+  .serv-headiing {
+    color: #ff8600;
+    font-size: 3rem;
+    padding: 5rem 0 0 0;
+    font-family: "Mate SC", serif;
+    font-weight: 900;
+    text-align: center;
+  }
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    position: absolute;
+    // display: none;
+  }
+  .services-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .serv-box {
+    flex-direction: column;
+    z-index: 1;padding-bottom: 4rem;
+  }
+  .service-card-wrapper {
+    display: flex;
+    // flex-wrap: wrap;
+    z-index: 1;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    .service-card {
+      border: #ffed71 0.6rem double;
+
+      width: 20rem;
+      min-width: 12rem;
+      // height: 20rem;
+      // max-height: 17rem;
+      // min-height: 12rem;
+      margin: 2rem 0.5rem;
+      padding: 1rem;
+      border-radius: 4rem 0.3rem 4rem 0.3rem;
+      background-color: rgba(255, 0, 71, 0.13%);
+    }
+  }
+  .servImg {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: center;
+
+    img {
+      border-radius: 1.6rem 0.3rem 1.6rem 0.3rem;
+      // max-width: 17rem;
+      // min-width: 12rem;
+      width: 10rem;
+    }
+  }
+  .servDes {
+    color: #fff996;
+    text-align: center;
+    font-size: 2.1rem;
+  }
+  @media only screen and (max-width: 580px) {
+    .service-card-wrapper {
+      flex-direction: column;
+    }
+  }
+}
+
+// footer
+
+footer {
+  height: 50vh;
+  .footwrapper {
+    .foot-tab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .links-tab{
+        margin: 1rem;
+      }
     }
   }
 }
