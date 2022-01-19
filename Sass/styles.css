@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400&family=Bebas+Neue&family=Cabin+Sketch:wght@400;700&family=Fira+Mono&family=Fredoka+One&family=Fugaz+One&family=Fuzzy+Bubbles:wght@400;700&family=Grandstander:wght@100&family=Great+Vibes&family=Mate+SC&family=Nanum+Pen+Script&family=Zen+Maru+Gothic:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Atma:wght@300;400&family=Bad+Script&family=Bebas+Neue&family=Cabin+Sketch:wght@400;700&family=Dancing+Script&family=Dongle:wght@300&family=Fira+Mono&family=Fredoka+One&family=Fugaz+One&family=Fuzzy+Bubbles:wght@400;700&family=Grandstander:wght@100&family=Great+Vibes&family=Lobster&family=Mate+SC&family=Merienda&family=Nanum+Pen+Script&family=Orbitron:wght@700&family=Zen+Maru+Gothic:wght@300;400&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -193,6 +193,7 @@ html {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background-size: 200% auto;
+  font-family: "Orbitron", sans-serif;
   color: #05008f;
   font-weight: 700;
   margin-top: 3rem;
@@ -396,6 +397,7 @@ html {
   border-top: 0.2rem double white;
   padding-top: 3rem;
   padding-bottom: 5rem;
+  overflow-x: hidden;
 }
 
 .menu .menu-headiing {
@@ -612,8 +614,8 @@ html {
 
 .Services {
   position: relative;
-  background-attachment: fixed;
   background: url(../Img/bg-service.jpg);
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -707,23 +709,90 @@ html {
 }
 
 footer {
-  height: 50vh;
+  background: linear-gradient(45deg, #d1d1d1, #f5c588);
+}
+
+footer .footwrapper .title {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Great Vibes", cursive;
+  font-weight: 700;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: head 80s linear infinite;
+          animation: head 80s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 footer .footwrapper .foot-tab {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-top: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 footer .footwrapper .foot-tab .links-tab {
-  margin: 1rem;
+  padding: 0.5rem 1rem;
+  width: 15rem;
+  text-align: justify;
+}
+
+footer .footwrapper .foot-tab .links-tab h6 {
+  font-size: 1.6rem;
+  font-family: "Merienda", cursive;
+}
+
+footer .footwrapper .foot-tab .links-tab p {
+  color: #81000c;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1;
+  font-family: "Dongle", sans-serif;
+}
+
+@media only screen and (max-width: 1200px) {
+  footer .footwrapper .foot-tab .links-tab {
+    width: 20rem;
+  }
+}
+
+footer .footwrapper .socialButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footwrapper .socialButtons span {
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+footer .footwrapper .socialButtons span:hover {
+  -webkit-filter: invert(0.3);
+          filter: invert(0.3);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+footer .footwrapper .copyrights {
+  text-align: center;
+  padding: 0.4rem;
+  background-color: #000;
+  color: white;
 }
 
 @media only screen and (max-width: 768px) {

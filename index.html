@@ -14,10 +14,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./Sass/styles.css">
+  <!-- Owl Carousel -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
     integrity="sha512-X/RSQYxFb/tvuz6aNRTfKXDnQzmnzoawgEQ4X8nZNftzs8KFFH23p/BA6D2k0QCM4R0sY1DEy9MIY9b3fwi+bg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <title>Food-Crow</title>
 </head>
@@ -112,8 +114,8 @@
     </div>
   </section>
 
-  <!-- Carousel -->
-  <section class="AboutUS container">
+  <!-- About Us -->
+  <section class="AboutUS container " data-aos="zoom-in">
     <div class="aboutus_title">
       <h2>About Us</h2>
       <p class="str">Lorem ipsum dolor sit amet consectetur.</p>
@@ -134,11 +136,11 @@
 
 
   <!-- Our Speciality -->
-  <section class="Speciality ">
+  <section class="Speciality " data-aos="zoom-in">
     <div class="Carousel-Wrapper">
       <div class="overlay"></div>
 
-      <div class="p-press__content is-constrain">
+      <div class="p-press__content is-constrain" data-aos="fade-up-right" data-aos-delay="450" data-aos-once="true">
         <div>
           <h1>
             Our Famous Dishes
@@ -147,9 +149,9 @@
           </p>
         </div>
 
-        <div class="p-press__carousel-wrapper">
+        <div class="p-press__carousel-wrapper ">
           <div id="owl-carousel" class="owl-carousel">
-            <article class="c-card-blog-news">
+            <article class="c-card-blog-news ">
               <a href="#" target="_blank">
 
                 <div class="p-press__image-wrapper">
@@ -217,7 +219,7 @@
     </div>
     <div class="main container">
       <ul class="cards">
-        <li class="cards_item">
+        <li class="cards_item " data-aos="fade-right">
           <div class="card price">
             <div class="card_image"></div>
             <div class="card_content">
@@ -240,7 +242,7 @@
             </div>
           </div>
         </li>
-        <li class="cards_item">
+        <li class="cards_item" data-aos="fade-right">
           <div class="card price1">
             <div class="card_image1 flip"></div>
             <div class="card_content">
@@ -265,7 +267,7 @@
             </div>
           </div>
         </li>
-        <li class="cards_item">
+        <li class="cards_item" data-aos="fade-left">
           <div class="card price2">
             <div class="card_image2"></div>
             <div class="card_content">
@@ -287,7 +289,7 @@
             </div>
           </div>
         </li>
-        <li class="cards_item">
+        <li class="cards_item" data-aos="fade-left">
           <div class="card price3">
             <div class="card_image3"></div>
             <div class="card_content">
@@ -318,22 +320,22 @@
   <section class="Services ">
     <div class="services-wrapper ">
       <div class="overlay"></div>
-      <div class="serv-box">
+      <div class="serv-box ">
         <h2 class="serv-headiing ">Services</h2>
         <div class="service-card-wrapper container ">
-          <div class="service-card">
+          <div class="service-card" data-aos="flip-left">
             <div class="servImg"><img src="./Img/payment.jpg" alt="" srcset=""></div>
             <div class="servDes">
               <p>Online <br> Payments </p>
             </div>
           </div>
-          <div class="service-card">
+          <div class="service-card" data-aos="flip-left">
             <div class="servImg"><img src="./Img/deliverybike.png" alt="" srcset=""></div>
             <div class="servDes">
               <p>Free Home <br> Delivery</p>
             </div>
           </div>
-          <div class="service-card">
+          <div class="service-card" data-aos="flip-left">
             <div class="servImg"><img src="./Img/open24-7.png" alt="" srcset=""></div>
             <div class="servDes">
               <p>24/7 Days Available</p>
@@ -346,32 +348,64 @@
 
 
 
-<footer>
-  <div class="footwrapper">
-      <div class="foot-tab">
+  <footer>
+    <div class="footwrapper ">
+      <div class="title">
+        <p class="animated">
+          Food-Crow
+        </p>
+      </div>
+      <hr>
+      <div class="foot-tab container">
         <div class="links-tab">
-          <h6>Hello</h6>
-          <p>Links</p>
-          <p>Links</p>
-          <p>Links</p>
-          <p>Links</p>
-          <p>Links</p>
+          <h6>About Us</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veniam laboriosam doloribus at
+            reprehenderit recusandae placeat debitis itaque rem autem.</p>
+
         </div>
         <div class="links-tab">
-          <h6>Hello</h6>
-          <p>Links</p>
-          <p>Links</p>
-          <p>Links</p>
-          <p>Links</p>
-          <p>Links</p>
+          <h6>Our Address </h6>
+          <p>Lorem ipsum dolor <br> sitLorem ipsum dolor <br> sit.Lorem .
+            Lorem ipsum -222222.</p>
+
+        </div>
+        <div class="links-tab">
+          <h6>Our Social links </h6>
+          <p>Lorem ipsum dolor <br> sitLorem ipsum dolor <br> sit.Lorem .
+            Lorem ipsum -222222.</p>
+
+        </div>
+        <div class="links-tab">
+          <h6>Contact Us </h6>
+          <p>Lorem ipsum dolor <br> sitLorem ipsum dolor <br> sit.Lorem .
+            Lorem ipsum -222222.</p>
+
         </div>
       </div>
-  </div>
-</footer>
+      <div class="socialButtons">
+        <a class="btn btn-block btn-social btn-twitter">
+          <span class="fa fa-twitter"></span>
+        </a>
+        <a class="btn btn-block btn-social btn-linkedin">
+          <span class="fa fa-linkedin"></span>
+        </a>
+        <a class="btn btn-block btn-social btn-github">
+          <span class="fa fa-github"></span>
+        </a>
+      </div>
+      <div class="copyrights">Copyright © 2021-2022 Pratik Pimpalkar. All Rights Reserved. All other trademarks and
+        copyrights are the property of their respective holders.</div>
+    </div>
+
+  </footer>
 
 
 
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
   <script src="https://use.fontawesome.com/826a7e3dce.js"></script>
